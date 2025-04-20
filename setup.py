@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "svgwrite",
+        "treepoem",
     ],
     author="DrWheelicus",
     author_email="haydenpmac@gmail.com",
