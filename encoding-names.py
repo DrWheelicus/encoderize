@@ -179,7 +179,9 @@ def generate_braille_stripe(text, filename, cs=60, dr=8, sp=20, color='black'):
     dwg.save()
 
 if __name__=='__main__':
-    text=input("Enter text: ")
+    text=input("Enter text to encode: ")
+    text = text.strip()
+    print("Generating SVGs...")
     base=f"output_{text}"; light=os.path.join(base,'light'); dark=os.path.join(base,'dark')
     os.makedirs(light,exist_ok=True); os.makedirs(dark,exist_ok=True)
     funcs=[
@@ -187,12 +189,14 @@ if __name__=='__main__':
         generate_dot_grid_steganography,generate_semaphore_flags,generate_a1z26_stripe,
         generate_code128_barcode,generate_waveform_stripe,generate_chevron_stripe,generate_braille_stripe
     ]
+    print("Generating light mode SVGs...")
     for f in funcs:
         f(text,os.path.join(light,f.__name__[9:]+"_"+text+".svg"))
+    print("Generating dark mode SVGs...")
     for f in funcs:
         # white on black for dark mode: override color param if supported else wrap
         if 'color' in f.__code__.co_varnames:
             f(text,os.path.join(dark,f.__name__[9:]+"_"+text+".svg"),color='white')
         else:
             f(text,os.path.join(dark,f.__name__[9:]+"_"+text+".svg"))
-    print("All SVGs generated in light & dark folders.")
+    print(f"All SVGs generated in light & dark folders. {len(funcs)} SVGs generated for {text}")
