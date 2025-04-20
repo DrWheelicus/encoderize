@@ -1,6 +1,93 @@
-# Name Encoding Visualizer
+# Name Visualizer
 
-A Python tool that generates various visual encodings of text input (particularly names) into SVG files. The tool supports both light and dark mode outputs.
+A Python package that generates various visual representations of text in SVG format.
+
+## Installation
+
+```bash
+pip install name_visualizer
+```
+
+## Usage
+
+### As a Python Module
+
+```python
+from name_visualizer import generate_binary_stripe, generate_morse_code_band
+
+# Generate a binary stripe visualization
+generate_binary_stripe("HELLO", "hello_binary.svg")
+
+# Generate a Morse code visualization
+generate_morse_code_band("HELLO", "hello_morse.svg")
+```
+
+### Command Line Interface
+
+```bash
+# Generate both light and dark mode visualizations
+name-visualizer "HELLO"
+
+# Generate only light mode visualizations
+name-visualizer "HELLO" --light-mode
+
+# Generate only dark mode visualizations
+name-visualizer "HELLO" --dark-mode
+
+# Specify custom output directory
+name-visualizer "HELLO" --output-dir my_output
+```
+
+## Available Visualizations
+
+1. **Binary Stripe** - Binary bar code representation
+2. **Morse Code Band** - Dots and dashes visualization
+3. **Circuit Trace Silhouette** - Circuit board-like pattern
+4. **Dot Grid Steganography** - Grid with highlighted letters
+5. **Semaphore Flags** - Flag position visualization
+6. **A1Z26 Numeric Stripe** - Numeric representation of letters
+7. **Code128 Barcode** - Standard barcode format
+8. **Waveform Stripe** - Waveform visualization
+9. **Chevron Stripe** - Chevron pattern visualization
+10. **Braille Stripe** - Braille representation
+
+## Requirements
+
+- Python 3.6 or higher
+- svgwrite
+- treepoem
+
+## Output Structure
+
+For input text "example", the output structure will be:
+
+```
+output/
+└── example/
+    ├── light/
+    │   ├── binary_stripe_example.svg
+    │   ├── morse_code_band_example.svg
+    │   └── ...
+    └── dark/
+        ├── binary_stripe_example.svg
+        ├── morse_code_band_example.svg
+        └── ...
+```
+
+## Customization
+
+Each visualization function accepts various parameters to customize the appearance:
+
+- Colors
+- Sizes
+- Spacing
+- Dimensions
+
+See the function docstrings for detailed parameter information.
+
+## License
+
+MIT License
 
 ## Features
 
@@ -17,35 +104,11 @@ The tool generates 10 different visual encodings for any input text:
 9. **Chevron Stripe**: Binary-based chevron pattern
 10. **Braille Stripe**: Visual representation of Braille characters
 
-## Installation
-
-1. Clone this repository
-2. Install the required dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
 ## Dependencies
 
 - svgwrite: For SVG file generation
 - pillow: For image processing
 - treepoem: For barcode generation
-
-## Usage
-
-1. Run the script:
-
-   ```bash
-   python encoding-names.py
-   ```
-
-2. Enter the text you want to encode when prompted
-3. The script will generate SVG files in two directories:
-   - `output_[text]/light/`: Light mode versions
-   - `output_[text]/dark/`: Dark mode versions
-
-Each encoding will be saved as a separate SVG file with the format `[encoding_name]_[text].svg`
 
 ## Output Structure
 
@@ -74,13 +137,9 @@ The script includes various parameters that can be modified to adjust the visual
 
 To modify these parameters, edit the corresponding function parameters in `encoding-names.py`.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Contact
 
-For questions or feedback, please contact me at [your email address].
+For questions or feedback, please contact me at [haydenpmac@gmail.com](mailto:haydenpmac@gmail.com)
 
 ## Contributing
 
