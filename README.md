@@ -147,8 +147,8 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contributors
 
-<a href="https://github.com/your-repo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-repo" />
+<a href="https://github.com/DrWheelicus/encoderize/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DrWheelicus/encoderize" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
