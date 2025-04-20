@@ -6,8 +6,9 @@ setup(
     packages=find_packages(),
     install_requires=[
         "svgwrite",
-        "treepoem",
+        "treepoem",  # For barcode generation
     ],
+    python_requires=">=3.8",
     author="DrWheelicus",
     author_email="haydenpmac@gmail.com",
     description="A collection of functions to generate various visual representations of text in SVG format",
@@ -19,7 +20,6 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.8",
     entry_points={
         'console_scripts': [
             'name-visualizer=name_visualizer.cli:main',

@@ -1,41 +1,55 @@
 # Name Visualizer
 
-A Python package that generates various visual representations of text in SVG format.
+A Python package for generating various visual representations of text in SVG format.
 
 ## Installation
 
+1. Install Ghostscript (required for barcode generation):
+   - Windows: Download and install from [Ghostscript website](https://www.ghostscript.com/releases/gsdnld.html)
+   - Linux: `sudo apt-get install ghostscript`
+   - macOS: `brew install ghostscript`
+
+2. Install the package:
 ```bash
-pip install name_visualizer
+pip install -e .
 ```
+
+## Features
+
+Generates SVG visualizations of text using various encoding methods:
+- Binary Stripe
+- Morse Code Band
+- Circuit Trace Silhouette
+- Dot Grid Steganography
+- Semaphore Flags
+- A1Z26 Numeric Stripe
+- Code128 Barcode
+- Waveform Stripe
+- Chevron Stripe
+- Braille Stripe
 
 ## Usage
 
-### As a Python Module
-
-```python
-from name_visualizer import generate_binary_stripe, generate_morse_code_band
-
-# Generate a binary stripe visualization
-generate_binary_stripe("HELLO", "hello_binary.svg")
-
-# Generate a Morse code visualization
-generate_morse_code_band("HELLO", "hello_morse.svg")
+```bash
+name-visualizer --text "HELLO" --output-dir output
 ```
 
-### Command Line Interface
+Options:
+- `--text`, `-t`: Text to visualize (required)
+- `--output-dir`, `-o`: Output directory (default: 'output')
+- `--dark`: Generate dark mode versions
+- `--light`: Generate light mode versions
 
+## Development
+
+Install development dependencies:
 ```bash
-# Generate both light and dark mode visualizations
-name-visualizer --text "HELLO"
+pip install -e ".[dev]"
+```
 
-# Generate only light mode visualizations
-name-visualizer --text "HELLO" --light
-
-# Generate only dark mode visualizations
-name-visualizer --text "HELLO" --dark
-
-# Specify custom output directory
-name-visualizer --text "HELLO" --output-dir my_output
+Run tests:
+```bash
+pytest
 ```
 
 ## Available Visualizations
