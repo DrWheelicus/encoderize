@@ -19,7 +19,7 @@ from . import (
 
 def main():
     parser = argparse.ArgumentParser(description='Generate visual representations of text in SVG format.')
-    parser.add_argument('--text', '-t', required=True, help='Text to visualize')
+    parser.add_argument('--text', '-t', required=True, default='Hello, World!', help='Text to visualize')
     parser.add_argument('--output-dir', '-o', default='output', help='Output directory')
     parser.add_argument('--dark', action='store_true', help='Generate dark mode versions')
     parser.add_argument('--light', action='store_true', help='Generate light mode versions')

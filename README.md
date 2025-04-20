@@ -26,16 +26,16 @@ generate_morse_code_band("HELLO", "hello_morse.svg")
 
 ```bash
 # Generate both light and dark mode visualizations
-name-visualizer "HELLO"
+name-visualizer --text "HELLO"
 
 # Generate only light mode visualizations
-name-visualizer "HELLO" --light-mode
+name-visualizer --text "HELLO" --light
 
 # Generate only dark mode visualizations
-name-visualizer "HELLO" --dark-mode
+name-visualizer --text "HELLO" --dark
 
 # Specify custom output directory
-name-visualizer "HELLO" --output-dir my_output
+name-visualizer --text "HELLO" --output-dir my_output
 ```
 
 ## Available Visualizations
