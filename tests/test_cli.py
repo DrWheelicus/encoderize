@@ -1,5 +1,5 @@
 """
-Tests for the command-line interface of name_visualizer.
+Tests for the command-line interface of encoderize.
 """
 
 import os
@@ -7,7 +7,7 @@ import tempfile
 import unittest
 import pytest
 from unittest.mock import patch
-from name_visualizer.cli import main
+from encoderize.cli import main
 
 class TestCLI(unittest.TestCase):
     def setUp(self):

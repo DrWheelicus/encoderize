@@ -1,5 +1,5 @@
 """
-Visualization functions for the name_visualizer module.
+Visualization functions for the encoderize module.
 
 This module contains all the visualization functions that generate SVG representations
 of text using various encoding methods.
