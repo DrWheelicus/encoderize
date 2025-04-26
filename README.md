@@ -1,6 +1,6 @@
 # Encoderize
 
-[![codecov](https://codecov.io/gh/DrWheelicus/encoderize/branch/main/graph/badge.svg)](https://codecov.io/gh/DrWheelicus/encoderize)
+[![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize)
 [![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize)
 [![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
 
