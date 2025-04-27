@@ -18,6 +18,8 @@ in SVG format. Each function creates a different type of visualization:
 Each visualization function takes text input and generates an SVG file.
 """
 
+__version__ = "0.1.0" 
+
 from .visualizers import (
     generate_binary_stripe,
     generate_morse_code_band,
@@ -43,9 +45,3 @@ __all__ = [
     'generate_chevron_stripe',
     'generate_braille_stripe'
 ]
-
-"""
-Name Visualizer package for generating various visual representations of text.
-"""
-
-__version__ = "0.1.0" 

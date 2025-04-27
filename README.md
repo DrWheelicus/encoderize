@@ -1,4 +1,8 @@
-# Name Visualizer
+# Encoderize
+
+[![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize)
+[![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize)
+[![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
 
 A Python package for generating various visual representations of text in SVG format.
 
@@ -31,7 +35,7 @@ Generates SVG visualizations of text using various encoding methods:
 ## Usage
 
 ```bash
-name-visualizer --text "HELLO" --output-dir output
+encoderize --text "HELLO" --output-dir output
 ```
 
 Options:
@@ -67,7 +71,7 @@ pytest
 
 ## Requirements
 
-- Python 3.6 or higher
+- Python 3.8 or higher
 - svgwrite
 - treepoem
 

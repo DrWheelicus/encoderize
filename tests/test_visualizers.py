@@ -1,5 +1,5 @@
 """
-Tests for the visualization functions in name_visualizer.
+Tests for the visualization functions in encoderize.
 """
 
 import os
@@ -7,7 +7,7 @@ import tempfile
 import unittest
 import pytest
 import svgwrite
-from name_visualizer import (
+from encoderize import (
     generate_binary_stripe,
     generate_morse_code_band,
     generate_circuit_trace_silhouette,

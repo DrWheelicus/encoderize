@@ -1,8 +1,16 @@
-setuptools
-svgwrite
-pillow
-treepoem
-pytest
-pytest-mock
-pytest-cov
-pytest-asyncio
+build>=1.2.2.post1
+coverage>=7.6.1; python_version == "3.8"
+coverage>=7.8.0; python_version >= "3.9"
+docutils>=0.20.1; python_version == "3.8"
+docutils>=0.21.2; python_version >= "3.9"
+keyring>=25.5.0; python_version == "3.8"
+keyring>=25.6.0; python_version >= "3.9"
+pillow>=10.4.0; python_version == "3.8"
+pillow>=11.2.1; python_version >= "3.9"
+pytest>=8.3.5
+setuptools<=75.3.2; python_version == "3.8"
+setuptools>=78.1.1; python_version >= "3.9"
+svgwrite>=1.4.3
+treepoem>=3.24.0; python_version == "3.8"
+treepoem>=3.27.1; python_version >= "3.9"
+twine>=6.1.0

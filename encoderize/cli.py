@@ -1,5 +1,5 @@
 """
-Command-line interface for the name_visualizer package.
+Command-line interface for the encoderize package.
 """
 
 import os
