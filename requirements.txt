@@ -11,5 +11,6 @@ pytest>=8.3.5
 setuptools<=75.3.2; python_version == "3.8"
 setuptools>=78.1.1; python_version >= "3.9"
 svgwrite>=1.4.3
-treepoem>=3.27.1
+treepoem>=3.24.0; python_version == "3.8"
+treepoem>=3.27.1; python_version >= "3.9"
 twine>=6.1.0
