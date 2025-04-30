@@ -1,12 +1,9 @@
+
+[![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize) [![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize) [![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
+
 <h1 align="center">
 Encoderize
 </h1>
-
-<div align="center">
-  [![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize)
-  [![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize)
-  [![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
-</div>
 
 <p align="center">
 A Python package for generating various visual representations of text in SVG format.
