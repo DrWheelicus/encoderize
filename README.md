@@ -1,4 +1,3 @@
-
 [![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize) [![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize) [![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
 
 <h1 align="center">
@@ -53,11 +52,7 @@ If neither `--dark` nor `--light` is specified, both versions will be generated.
 
 ## Example Visualizations
 
-*(Placeholder: Consider adding a few small example SVG outputs here for common words like "TEST" or "HELLO" in different encodings.)*
-
-* Binary Stripe (Light): `output/HELLO/light/binary_stripe_HELLO.svg`
-* Morse Code Band (Dark): `output/HELLO/dark/morse_code_band_HELLO.svg`
-* Circuit Trace (Light): `output/HELLO/light/circuit_trace_silhouette_HELLO.svg`
+*WIP*
 
 ## Output Structure
 
