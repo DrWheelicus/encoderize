@@ -120,7 +120,7 @@ Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) fil
 
 ## Contact
 
-For questions or feedback, please contact Hayden MacDonald at [haydenpmac@gmail.com](mailto:haydenpmac@gmail.com).
+For questions or feedback, please contact Hayden MacIntyre at [haydenpmac@gmail.com](mailto:haydenpmac@gmail.com).
 
 ## Contributors
 
