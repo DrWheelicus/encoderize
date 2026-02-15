@@ -19,6 +19,7 @@ __pycache__/
 .idea/
 
 output_*/
+svg_out*/
 
 .pytest_cache/
 
