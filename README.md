@@ -1,8 +1,12 @@
-[![codecov](https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01)](https://codecov.io/gh/DrWheelicus/encoderize) [![PyPI](https://badge.fury.io/py/encoderize.svg)](https://badge.fury.io/py/encoderize) [![Downloads](https://pepy.tech/badge/encoderize)](https://pepy.tech/project/encoderize)
+<p align="center">
+  <img src="assets/docs/Transparent Logo.png" alt="Encoderize Logo" width="300">
+</p>
 
-<h1 align="center">
-Encoderize
-</h1>
+<p align="center">
+  <a href="https://codecov.io/gh/DrWheelicus/encoderize"><img src="https://codecov.io/gh/DrWheelicus/encoderize/graph/badge.svg?token=QPQMGU1G01" alt="codecov"></a>
+  <a href="https://badge.fury.io/py/encoderize"><img src="https://badge.fury.io/py/encoderize.svg" alt="PyPI"></a>
+  <a href="https://pepy.tech/project/encoderize"><img src="https://pepy.tech/badge/encoderize" alt="Downloads"></a>
+</p>
 
 <p align="center">
 A Python package for generating various visual representations of text in SVG format.
@@ -120,7 +124,7 @@ Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) fil
 
 ## Contact
 
-For questions or feedback, please contact Hayden MacDonald at [haydenpmac@gmail.com](mailto:haydenpmac@gmail.com).
+For questions or feedback, please contact Hayden MacIntyre at [haydenpmac@gmail.com](mailto:haydenpmac@gmail.com).
 
 ## Contributors
 
