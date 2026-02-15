@@ -19,6 +19,7 @@ __pycache__/
 .idea/
 
 output_*/
+svg_out*/
 
 .pytest_cache/
 
@@ -30,4 +31,11 @@ htmlcov/
 dist/
 build/
 
-
+# Editor files
+.cursor/
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*
+!.env.example
