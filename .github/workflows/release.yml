@@ -13,6 +13,7 @@ jobs:
   # Reuse the existing CI workflow for testing and building
   ci:
     uses: ./.github/workflows/python-app.yml
+    secrets: inherit
 
   publish-pypi:
     needs: ci
