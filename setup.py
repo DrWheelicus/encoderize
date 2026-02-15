@@ -1,8 +1,13 @@
+import re
 from setuptools import setup, find_packages
+
+# Read version from encoderize/__init__.py (single source of truth)
+with open("encoderize/__init__.py", "r") as f:
+    version = re.search(r'__version__ = "([^"]+)"', f.read()).group(1)
 
 setup(
     name="encoderize",
-    version="0.1.0",
+    version=version,
     keywords="encoderize, encoder, barcode, svg, visualizer",
     packages=find_packages(),
     install_requires=[
