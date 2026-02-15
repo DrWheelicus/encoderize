@@ -1,5 +1,9 @@
 <p align="center">
-  <img src="assets/docs/Transparent Logo.png" alt="Encoderize Logo" width="300">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/docs/Transparent Logo Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/docs/Transparent Logo.png">
+    <img src="assets/docs/Transparent Logo.png" alt="Encoderize Logo" width="300">
+  </picture>
 </p>
 
 <p align="center">

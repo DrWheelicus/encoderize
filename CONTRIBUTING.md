@@ -43,6 +43,45 @@ This section guides you through submitting an enhancement suggestion for Encoder
 - Use `black` for code formatting.
 - Use `flake8` for linting.
 
+## Releasing (Maintainers)
+
+Releases are automated via GitHub Actions. To create a new release:
+
+1. **Update the version** in `encoderize/__init__.py`:
+   ```python
+   __version__ = "0.2.0"  # Use semantic versioning
+   ```
+
+2. **Commit the version bump**:
+   ```bash
+   git add encoderize/__init__.py
+   git commit -m "chore: bump version to 0.2.0"
+   git push
+   ```
+
+3. **Create and push a tag** (must match the version with a `v` prefix):
+   ```bash
+   git tag v0.2.0
+   git push --tags
+   ```
+
+4. The release workflow will automatically:
+   - Run tests to ensure everything passes
+   - Build the package (sdist and wheel)
+   - Publish to PyPI
+   - Create a GitHub Release with auto-generated release notes
+
+### First-Time Setup (PyPI Trusted Publishing)
+
+Before the first automated release, a maintainer must configure trusted publishing on PyPI:
+
+1. Go to https://pypi.org/manage/project/encoderize/settings/publishing/
+2. Add a new publisher with:
+   - Owner: `DrWheelicus`
+   - Repository: `encoderize`
+   - Workflow name: `release.yml`
+   - Environment name: `Main Deployment`
+
 ## Any questions?
 
 Feel free to reach out if you have questions about contributing. 
