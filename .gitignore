@@ -31,4 +31,11 @@ htmlcov/
 dist/
 build/
 
-
+# Editor files
+.cursor/
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*
+!.env.example
