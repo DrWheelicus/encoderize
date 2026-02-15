@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/docs/Transparent Logo Dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="assets/docs/Transparent Logo.png">
-    <img src="assets/docs/Transparent Logo.png" alt="Encoderize Logo" width="300">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/docs/Transparent%20Logo%20Dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/docs/Transparent%20Logo.png">
+    <img src="assets/docs/Transparent%20Logo.png" alt="Encoderize Logo" width="300">
   </picture>
 </p>
 
